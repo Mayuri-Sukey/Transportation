@@ -1,0 +1,261 @@
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+
+/* HOme 2.0 About */
+.Home2_welcome_section{
+
+    padding-top: 80px;
+    padding-bottom: 300px;
+    background: url("../assets/welcome2.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  
+}
+
+.Home2_welcome_section h2{
+    font-size: 3.5rem;
+}
+.Home2_welcome_section p {
+    color: var(--grey);
+    padding: 20px 30px;
+    font-size: 19px;
+}
+
+
+/* Media query for mobiles */
+@media (max-width:1200px){
+.carosel-img{
+
+    height: 80vh;
+}
+
+}
+
+.order_now{
+    color:var(--light-black);
+    background: var(--yellow);
+    border-color: var(--yellow);
+    padding:15px 38px;
+    font-size:18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: var(--oswald-font);
+    vertical-align: middle;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .order_now:hover,
+  .order_now:focus{
+    color: var(--white);
+    background: transparent;
+    border-color: var(--light-white);
+  }
+  
+  .btn_red{
+    color: var(--white);
+    background: var(--light-red);
+    border-color: var(--light-red);
+  }
+  
+  .btn_red:hover,
+  .btn_red:focus{
+    color: var(--light-red);
+    background:transparent ;
+    border-color: var(--light-red);
+  }
+  
+
+  /* parallex */
+  
+.bg_parallax_scroll{
+  background: url("../assets/parallex.jpg") no-repeat center center;
+  background-size: cover;
+ background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+}
+
+/* .card-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.card .img-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transition: scale 0.6s, rotate 0.6s, filter 1s;
+}
+
+.card .img-content svg {
+  width: 50px;
+  height: 50px;
+  fill: #212121;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #e8e8e8;
+  padding: 20px 24px;
+  line-height: 1.5;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover .img-content {
+  scale: 2.5;
+  rotate: 30deg;
+  filter: blur(7px);
+}
+
+.card:hover .img-content svg {
+  fill: transparent;
+} */
+
+
+/* Home3 */
+.Home3-Why_US h2{
+  font-size: 3.5rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  padding: 2px;
+  border-radius: 24px;
+  overflow: hidden;
+  line-height: 1.6;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 34px;
+  border-radius: 22px;
+  color: #ffffff;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  z-index: 1;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .para {
+  z-index: 1;
+  opacity: 0.8;
+  font-size: 18px;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 160%;
+  width: 160%;
+  border-radius: inherit;
+  background: red;
+  background: linear-gradient(to right, #c3c8dc, #63cccf);
+  transform-origin: center;
+  animation: moving 4.8s linear infinite paused;
+  transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover::before {
+  animation-play-state: running;
+  z-index: -1;
+  width: 20%;
+}
+
+.card:hover .content .heading,
+.card:hover .content .para {
+  color: #000000;
+}
+
+.card:hover {
+  box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
+    0rem 24px 24px rgba(10, 60, 255, 0.09),
+    0rem 55px 33px rgba(10, 60, 255, 0.05),
+    0rem 97px 39px rgba(10, 60, 255, 0.01), 0rem 152px 43px rgba(10, 60, 255, 0);
+  scale: 1.05;
+  color: #000000;
+}
+
+.whyUS-cards{
+
+  display: flex; 
+ justify-content: center;
+
+}
+
+@keyframes moving {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
