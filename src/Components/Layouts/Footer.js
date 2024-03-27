@@ -79,7 +79,7 @@ const Footer = () => {
   style={{ backgroundColor: '#255b68' }}
 >
         <div className="container py-5">
-          <div className="row g-5">
+          <div className="row g-4">
             <div className="col-lg-3 col-md-6">
               <img src={Logo} className="footer-logo"/>
               <div className="d-flex pt-3 ">

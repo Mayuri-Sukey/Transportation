@@ -19,6 +19,17 @@
 .Home2_welcome_section h2{
     font-size: 3.5rem;
 }
+
+.Home2_welcome_section h3{
+  font-size: 1.5rem;
+  color: rgb(10, 92, 92);
+  font-weight: bold;
+}
+
+.Home2_welcome_section p {
+  color: rgb(247 190 39) !important;
+}
+
 .Home2_welcome_section p {
     color: var(--grey);
     padding: 20px 30px;

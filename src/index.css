@@ -67,7 +67,8 @@ body,html{
 
 /* heading tags */
 h1,h2,h3,h4,h5,h6{
-  font-family: var(--oswald-font);
+  /* font-family: var(--oswald-font); */
+  font-family:  'Mukta', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.3;
