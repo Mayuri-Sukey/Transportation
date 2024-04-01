@@ -27,7 +27,7 @@
 }
 
 .Home2_welcome_section p {
-  color: rgb(247 190 39) !important;
+  color: black!important;
 }
 
 .Home2_welcome_section p {
@@ -199,6 +199,7 @@
   padding: 34px;
   border-radius: 22px;
   color: #ffffff;
+  /* color: white; */
   overflow: hidden;
   background: #ffffff;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
@@ -226,7 +227,7 @@
   width: 160%;
   border-radius: inherit;
   background: red;
-  background: linear-gradient(to right, #c3c8dc, #63cccf);
+  background: linear-gradient(to right, #113236, #63cccf);
   transform-origin: center;
   animation: moving 4.8s linear infinite paused;
   transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);

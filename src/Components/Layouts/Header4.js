@@ -1,6 +1,11 @@
 import React, { useState , useEffect} from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
-import "../../Styles/HeaderStyle.css"
+
+const StickyStyle = {position: "absolute",
+width: "100%",
+zIndex: 1000}
+
 
 const Header4 = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -24,7 +29,7 @@ const Header4 = () => {
   }
 
   return (
-<header className={`border-b bg-[#232f3e] font-sans min-h-[60px] ${navSticky ? "sticky" : ""}`}>
+<header className={`border-b bg-[#232f3e] font-sans min-h-[60px] ${navSticky ? "sticky" : ""}`} >
       <div className="flex flex-wrap items-center justify-between xl:px-10 px-6 py-1 relative lg:gap-y-2 gap-y-4 gap-x-4">
         <a href="javascript:void(0)">
           <img src={Logo} alt="logo" className="w-36" />
@@ -71,7 +76,8 @@ const Header4 = () => {
             </a>
           </li>
           <li class='group max-lg:border-b max-lg:py-2 relative'>
-          <a href='javascript:void(0)'
+          <a
+              href="javascript:void(0)"
             class='hover:text-yellow-300 font-bold text-white text-[15px] lg:hover:fill-yellow-300 block'>Pages<svg
               xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='currentColor' class="ml-1 inline-block"
               viewBox="0 0 24 24">
@@ -82,8 +88,8 @@ const Header4 = () => {
           </a>
           <ul
             class='absolute hidden group-hover:block shadow-lg max-lg:border max-lg:border-gray-500 bg-[#232f3e] px-6 pb-4 pt-6 space-y-3 lg:top-5 max-lg:top-8 lg:-left-6 min-w-[250px] z-50'>
-            <li class='border-b py-2'><a href='javascript:void(0)'
-                class='hover:text-yellow-300 font-bold text-white text-[15px] block'>About Us</a></li>
+            <li class='border-b py-2'><Link to='/about'
+                class='hover:text-yellow-300 font-bold text-white text-[15px] block'>About Us</Link></li>
             <li class='border-b py-2'><a href='javascript:void(0)'
                 class='hover:text-yellow-300 font-bold text-white text-[15px] block'>Vision & Mission</a></li>
             <li class='border-b py-2'><a href='javascript:void(0)'

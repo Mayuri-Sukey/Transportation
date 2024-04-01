@@ -3,12 +3,14 @@ import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../../assets/carosel1.jpg'
 import img2 from '../../assets/carosel2.jpg'
 import img3 from '../../assets/carosel3.jpg'
+import SocialMedia from '../../Components/Layouts/SocialMedia';
+
 
 
 function Home1() {
   return (
     <>
-
+    <SocialMedia/>
     <Carousel>
     <Carousel.Item>
       <img style={{height:'100vh'}}

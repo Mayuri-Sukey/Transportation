@@ -1,11 +1,11 @@
 header {
-    position:absolute;
+    position:absolute !important;
     width: 100%;
     /* background-color: transparent; */
     z-index: 1000;
 }
 
-header .sticky{
+header .sticky {
     position: fixed;
     left:0;
     top:0;
