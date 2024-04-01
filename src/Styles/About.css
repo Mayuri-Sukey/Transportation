@@ -1,3 +1,83 @@
 .about1{
-    background: url("../assets/about1.jpg") no-repeat center center;
+    /* width: 100%; */
+    
+    padding-top: 80px;
+    /* padding-bottom: 300px; */
+    background: rgb(8, 1, 2) url("../assets/about4.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    opacity: 12;
 }
+.about1 
+h2{
+
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    color:white;
+    padding-top: 5%;
+    animation: fadeDown 4s ease-in-out forwards;
+}
+
+.about1 p{
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    color:white;
+    padding-top: 22%;
+    font-style: italic;
+    animation: fadeIn 5s ease forwards; 
+}
+
+/* about2 Section */
+
+.about2{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--light-grey);background: var(--light-grey) ;
+}
+
+.about2_img{
+    border-radius: 50px;
+    justify-self: center;
+    margin: auto; 
+}
+
+.about2 p{
+  text-align: justify;
+  color:black
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes for slide in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Move the element up slightly */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move the element to its original position */
+    }
+  }
+ 

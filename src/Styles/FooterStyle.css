@@ -1,3 +1,12 @@
+.f_contacts {
+  margin-left: 33px;
+}
+
+.mt {
+  margin-top: -42px;
+}
+
+
 :root {
     --primary: #fea116;
     --light: #f1f8ff;
