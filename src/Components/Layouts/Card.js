@@ -21,7 +21,7 @@ export default function Card({title,paragraph,index}) {
 </div> */}
 
 <Col lg={{span: 4}} className="mb-4 whyUS-cards">
-<div class="card" data-aos="flip-left">
+<div class="Why_us" data-aos="flip-left">
   <div class="content">
     <p class="heading">{title}</p>
     <p class="para">

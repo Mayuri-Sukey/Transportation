@@ -7,12 +7,14 @@ import Home3 from './Home3'
 //import Home5 from './Home4'
 import Home4 from './Home4'
 import Home5 from './Home5'
+import Carosel from '../../Components/Layouts/Carosel'
 
 
 const Home = () => {
   return (
     <>
       <Layout>
+        {/* <Carosel/> */}
              <Home1></Home1>
              {/* <SocialMedia/> */}
              <Home2/>

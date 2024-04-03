@@ -178,7 +178,7 @@
   font-size: 3.5rem;
 }
 
-.card {
+.Why_us {
   position: relative;
   display: flex;
   align-items: center;
@@ -220,7 +220,7 @@
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card::before {
+.Why_us::before {
   content: "";
   position: absolute;
   height: 160%;
@@ -233,18 +233,18 @@
   transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover::before {
+.Why_us:hover::before {
   animation-play-state: running;
   z-index: -1;
   width: 20%;
 }
 
-.card:hover .content .heading,
-.card:hover .content .para {
+.Why_us:hover .content .heading,
+.Why_us:hover .content .para {
   color: #000000;
 }
 
-.card:hover {
+.Why_us:hover {
   box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
     0rem 24px 24px rgba(10, 60, 255, 0.09),
     0rem 55px 33px rgba(10, 60, 255, 0.05),
@@ -259,6 +259,22 @@
  justify-content: center;
 
 }
+
+
+/* product section */
+.Product{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+
+}
+
 
 @keyframes moving {
   0% {

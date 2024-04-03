@@ -1,125 +1,111 @@
-import React from 'react'
+import React, { useState } from "react";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { FcEngineering } from "react-icons/fc";
+import Carosel from "../../assets/Engineering_Goods.jpg";
+import "../../Styles/Swiper.css";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Home4 = () => {
-  return (
-    <div>
-      <div class="font-[sans-serif]">
-      <div class="p-4 mx-auto lg:max-w-6xl md:max-w-4xl sm:max-w-full">
-        <h2 class="text-4xl font-extrabold text-gray-800 mb-12">Premium Threads</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
-            <div class="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://readymadeui.com/images/product1.webp" alt="Product 1" class="h-full w-full object-cover object-top" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800">Lexicon Luxe | T-shirt</h3>
-              <div class="mt-4 flex items-center flex-wrap gap-2">
-                <p class="text-lg text-gray-700">$10</p>
-                <div class="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ml-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" class="fill-gray-800 inline-block" viewBox="0 0 64 64">
-                    <path
-                      d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                      data-original="#000000"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
-            <div class="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://readymadeui.com/images/product2.webp" alt="Product 2" class="h-full w-full object-cover object-top" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800">Adjective Attire | T-shirt</h3>
-              <div class="mt-4 flex items-center flex-wrap gap-2">
-                <p class="text-lg text-gray-700">$12</p>
-                <div class="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ml-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" class="fill-gray-800 inline-block" viewBox="0 0 64 64">
-                    <path
-                      d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                      data-original="#000000"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
-            <div class="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://readymadeui.com/images/product3.webp" alt="Product 3" class="h-full w-full object-cover object-top" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800">ThreadCraft Vibes | T-shirt</h3>
-              <div class="mt-4 flex items-center flex-wrap gap-2">
-                <p class="text-lg text-gray-700">$14</p>
-                <div class="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ml-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" class="fill-gray-800 inline-block" viewBox="0 0 64 64">
-                    <path
-                      d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                      data-original="#000000"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
-            <div class="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://readymadeui.com/images/product7.webp" alt="Product 3" class="h-full w-full object-cover object-top" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800">Verbal Vogue Tees | T-shirt</h3>
-              <div class="mt-4 flex items-center flex-wrap gap-2">
-                <p class="text-lg text-gray-700">$12</p>
-                <div class="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ml-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" class="fill-gray-800 inline-block" viewBox="0 0 64 64">
-                    <path
-                      d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                      data-original="#000000"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
-            <div class="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://readymadeui.com/images/product5.webp" alt="Product 3" class="h-full w-full object-cover object-top" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800">Jargon Jungle | T-shirt</h3>
-              <div class="mt-4 flex items-center flex-wrap gap-2">
-                <p class="text-lg text-gray-700">$15</p>
-                <div class="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ml-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" class="fill-gray-800 inline-block" viewBox="0 0 64 64">
-                    <path
-                      d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                      data-original="#000000"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
-            <div class="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://readymadeui.com/images/product6.webp" alt="Product 3" class="h-full w-full object-cover object-top" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-lg font-bold text-gray-800">Syllable Streetwear | T-shirt</h3>
-              <div class="mt-4 flex items-center flex-wrap gap-2">
-                <p class="text-lg text-gray-700">$14</p>
-                <div class="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer ml-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" class="fill-gray-800 inline-block" viewBox="0 0 64 64">
-                    <path
-                      d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                      data-original="#000000"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  )
-}
+  const [product, setProduct] = useState([
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 1",
+      icon: <FcEngineering />,
+    },
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 2",
+      icon: <MdOutlineHealthAndSafety />,
+    },
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 2",
+      icon: <MdOutlineHealthAndSafety />,
+    },
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 2",
+      icon: <MdOutlineHealthAndSafety />,
+    },
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 2",
+      icon: <MdOutlineHealthAndSafety />,
+    },
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 2",
+      icon: <MdOutlineHealthAndSafety />,
+    },
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 2",
+      icon: <MdOutlineHealthAndSafety />,
+    },
+    {
+      imageUrl: Carosel,
+      title: "Engineering Goods 2",
+      icon: <MdOutlineHealthAndSafety />,
+    },
+  ]);
 
-export default Home4
+  console.log(product);
+  return (
+    <section>
+      {/* <Container> */}
+        {/* <Row>
+          <Col lg={{ span: 8, offset: 2 }} className="text-center">
+            <h2 className="pt-5 pb-5 ">Why US</h2>
+          </Col>
+        </Row> */}
+        {/* <Row className="justify-content-center"> */}
+          {/* <Col lg={{ span: 4 }} className="whyUS-cards"> */}
+          <div className="Product">
+            {product.map((prodData, index) => (
+              <div key={index}>
+                <div>
+                  <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+                    <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
+                      <img
+                        src={prodData.imageUrl}
+                        alt="card-image"
+                        class="object-cover w-full h-full "
+                      />
+                    </div>
+                    <div class="p-6">
+                      <div class="flex items-center justify-between mb-2">
+                        <p
+                          className="block font-sans text-base antialiased font-large leading-relaxed"
+                          style={{ color: "#000", fontWeight: "bold" }}
+                        >
+                          {prodData.title}
+                        </p>
+                        <p
+                          class="block font-sans text-base antialiased font-large leading-relaxed"
+                          style={{ fontSize: "2rem" }}
+                        >
+                          {prodData.icon}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                      <button
+                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button"
+                      >
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+            </div>
+          {/* </Col> */}
+        {/* </Row> */}
+      {/* </Container> */}
+    </section>
+  );
+};
+
+export default Home4;

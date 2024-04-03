@@ -86,8 +86,8 @@ const Header4 = () => {
               class='absolute hidden group-hover:block shadow-lg max-lg:border max-lg:border-gray-500 bg-white px-6 pb-4 pt-6 space-y-3 lg:top-5 max-lg:top-8 lg:-left-6 min-w-[250px] z-50'>
               <li class='border-b py-2'><Link to='/about'
                   class='hover:text-blue-300 font-bold text-[#000] text-[15px] block'>About Us</Link></li>
-              <li class='border-b py-2'><a href='javascript:void(0)'
-                  class='hover:text-blue-300 font-bold text-[#000] text-[15px] block'>Vision & Mission</a></li>
+              <li class='border-b py-2'><Link to='/vision'
+                  class='hover:text-blue-300 font-bold text-[#000] text-[15px] block'>Vision & Mission</Link></li>
               <li class='border-b py-2'><a href='javascript:void(0)'
                   class='hover:text-blue-300 font-bold text-[#000] text-[15px] block'>Management Team</a></li>
               <li class='border-b py-2'><a href='javascript:void(0)'
