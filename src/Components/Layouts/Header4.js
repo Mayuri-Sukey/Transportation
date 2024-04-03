@@ -32,7 +32,7 @@ const Header4 = () => {
         <div className="flex items-center max-lg:ml-auto lg:order-1">
           <span className="relative">
             <i class="fa-brands fa-facebook"></i>
-            <span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">0</span>
+            <span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"></span>
           </span> 
 
           <span className="relative ml-8">
@@ -63,13 +63,13 @@ const Header4 = () => {
           className="lg:!flex max-lg:hidden max-lg:w-full lg:space-x-10 max-lg:space-y-3 max-lg:my-4"
         >
           <li className="max-lg:border-b max-lg:py-2">
-            <a
+            <Link to= "/"
               href="javascript:void(0)"
               className="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
 
             >
               Home
-            </a>
+            </Link>
           </li>
           <li class='group max-lg:border-b max-lg:py-2 relative'>
             <a
