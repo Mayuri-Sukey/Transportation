@@ -55,11 +55,23 @@ const Home2 = () => {
                 our diverse range of high-quality products for seamless global
                 trade. Your journey with us begins with excellence.
               </motion.p>
-              <div>
+              <motion.div
+            initial={{
+   y:50,
+   opacity:0
+            }}
+            whileInView={{
+              y:0,
+              opacity:1
+            }}
+            transition={{
+              duration:1,
+              delay:.4
+            }}>
                 <Link to="/" className="btn order_now btn_red">
                   About Us
                 </Link>
-              </div>
+              </motion.div>
             </Col>
           </Row>
         </Container>
