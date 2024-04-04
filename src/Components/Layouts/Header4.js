@@ -4,41 +4,20 @@ import Logo from "../../assets/logo.png";
 
 const Header4 = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [navSticky, setNavSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollValue = window.scrollY;
-      scrollValue > 100 ? setNavSticky(true) : setNavSticky(false);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   function toggleMenu() {
     setMenuOpen(!isMenuOpen);
   }
 
   return (
-    <header
-      className={`border-b bg-white font-sans min-h-[60px] ${
-        navSticky ? "sticky" : ""
-      }`}
-    >
+    <header className={`border-b bg-white font-sans min-h-[60px] `}>
       <div className="flex flex-wrap items-center justify-between xl:px-10 px-6 py-1 relative lg:gap-y-2 gap-y-4 gap-x-4">
-        <a href="javascript:void(0)">
+        <Link to="/">
           <img src={Logo} alt="logo" className="w-36" />
-        </a>{" "}
+        </Link>{" "}
         <div className="flex items-center max-lg:ml-auto lg:order-1">
           <span className="relative">
             <i class="fa-brands fa-facebook"></i>
-            <span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
-              0
-            </span>
+            <span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"></span>
           </span>
 
           <span className="relative ml-8">{/* Icon elements */}</span>
@@ -72,12 +51,13 @@ const Header4 = () => {
           className="lg:!flex max-lg:hidden max-lg:w-full lg:space-x-10 max-lg:space-y-3 max-lg:my-4"
         >
           <li className="max-lg:border-b max-lg:py-2">
-            <a
+            <Link
+              to="/"
               href="javascript:void(0)"
               className="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li class="group max-lg:border-b max-lg:py-2 relative">
             <a
@@ -110,16 +90,16 @@ const Header4 = () => {
                 </Link>
               </li>
               <li class="border-b py-2">
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  to="/vision"
                   class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
                 >
                   Vision & Mission
-                </a>
+                </Link>
               </li>
               <li class="border-b py-2">
                 <Link
-                  to="/management-team"
+                  to="/profile/management-team"
                   class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
                 >
                   Management Team
