@@ -8,6 +8,7 @@ import SocialMedia from '../../Components/Layouts/SocialMedia';
 
 
 function Home1() {
+  console.log("home1 component")
   return (
     <>
     <SocialMedia/>

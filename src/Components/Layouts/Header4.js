@@ -4,27 +4,12 @@ import Logo from "../../assets/logo.png";
 
 const Header4 = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [navSticky, setNavSticky] = useState(false);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollValue = window.scrollY;
-      scrollValue > 100 ? setNavSticky(true) : setNavSticky(false);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   function toggleMenu() {
     setMenuOpen(!isMenuOpen);
   }
 
   return (
-    <header className={`border-b bg-white font-sans min-h-[60px] ${navSticky ? "sticky" : ""}`} >
+    <header className={`border-b bg-white font-sans min-h-[60px] `} >
       <div className="flex flex-wrap items-center justify-between xl:px-10 px-6 py-1 relative lg:gap-y-2 gap-y-4 gap-x-4">
         <a href="javascript:void(0)">
           <img src={Logo} alt="logo" className="w-36" />

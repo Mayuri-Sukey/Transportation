@@ -1,8 +1,5 @@
 import React from 'react';
 import Footer from './Footer';
-import Header from './Header';
-import Header1 from "../Layouts/Header1"
-import Header3 from './Header3';
 import Header4 from './Header4';
 
 
