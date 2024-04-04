@@ -1,14 +1,15 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import img1 from "../../assets/carosel1.jpg";
-import img2 from "../../assets/carosel2.jpg";
-import img3 from "../../assets/carosel3.jpg";
-import SocialMedia from "../../Components/Layouts/SocialMedia";
+import { Carousel } from "react-bootstrap";
+import img1 from "../assets/carosel1.jpg";
+import img2 from "../assets/carosel2.jpg";
+import img3 from "../assets/carosel3.jpg";
+import "./Test.css";
 
-function Home1() {
+
+
+const Test = () => {
   return (
-    <>
-      <SocialMedia />
+    <div>
       <Carousel>
         <Carousel.Item>
           <img
@@ -17,9 +18,10 @@ function Home1() {
             src={img1}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Carousel.Caption className="carouserl-caption-b">
+            <h3>Sending a Smile across the borders </h3>
+            <p>We are a leading Importer and  Exporter </p>
+            <p>Proudly Certified with ISO 9001:2015 Standard</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -51,8 +53,8 @@ function Home1() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </>
+    </div>
   );
-}
+};
 
-export default Home1;
+export default Test;

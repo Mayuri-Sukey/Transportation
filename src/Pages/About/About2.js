@@ -6,7 +6,7 @@ const About2 = () => {
   return (
     <>
       <section className='about2'>
-        <Container>
+        {/* <Container> */}
           <Row>
           <Col lg={{span:5, offset:1,}} className="text-center">
             <img src={about5} alt="burger" className="about2_img" data-aos="fade-right"/>
@@ -21,7 +21,7 @@ const About2 = () => {
           </Col>
 
           </Row>
-        </Container>
+        {/* </Container> */}
    
       </section>
     </>
