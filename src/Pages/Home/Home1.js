@@ -5,10 +5,11 @@ import img2 from "../../assets/carosel2.jpg";
 import img3 from "../../assets/carosel3.jpg";
 import SocialMedia from "../../Components/Layouts/SocialMedia";
 
+
 function Home1() {
   console.log("home1 component")
   return (
-    <>
+    <section className="carosel">
     <SocialMedia/>
     <Carousel>
     <Carousel.Item>
@@ -18,8 +19,10 @@ function Home1() {
         alt="First slide"
       />
       <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3>Sending a Smile across the borders
+</h3>
+        <p>We are a leading Importer and Exporter
+Proudly Certified with ISO 9001:2015 Standard</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -30,8 +33,12 @@ function Home1() {
       />
 
       <Carousel.Caption>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>As leading importers and exporters in India, we prioritize quality standards in all our endeavors</h3>
+        <p>Explore our
+extensive range of premium products meticulously crafted for seamless global trade. Your journey with us
+commences with a commitment to excellence, ensuring your satisfaction every step of the way. Partner with
+us for a reliable and rewarding trading experience
+</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -42,14 +49,15 @@ function Home1() {
       />
 
       <Carousel.Caption>
-        <h3>Third slide label</h3>
+        <h3>Sending a Smile across the borders</h3>
         <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+        We are a leading Importer and Exporter
+Proudly Certified with ISO 9001:2015 Standard
         </p>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
-  </>
+  </section>
   )
 }
 
