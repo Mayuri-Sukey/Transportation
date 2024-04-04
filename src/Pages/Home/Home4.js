@@ -7,12 +7,13 @@ import { MdAgriculture } from "react-icons/md";
 import { IoPrintSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
 import Product1 from "../../assets/Engineering_Goods.jpg";
-import Product2 from "../../assets/product2.jpg";
+// import Product2 from "../../assets/product2.jpg";
+import Product2 from "../../assets/Pharmaceutical.jpg"
 import Product3 from "../../assets/product3.jpg";
 import Product4 from "../../assets/product4.jpg";
-import Product5 from "../../assets/product5.jpg";
+import Product5 from "../../assets/Agriculture.jpg";
 import Product6 from "../../assets/product6.jpg";
-import Product7 from "../../assets/product7.jpg";
+import Product7 from "../../assets/cloths.jpg";
 import Product8 from "../../assets/product8.jpg";
 import "../../Styles/Swiper.css";
 import { Col, Container, Row } from "react-bootstrap";
