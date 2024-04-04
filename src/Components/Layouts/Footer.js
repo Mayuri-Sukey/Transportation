@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "../../Styles/FooterStyle.css";
-import Logo from '../../assets/logo.png';
+import Logo from "../../assets/logo.png";
 import {
   FaRegArrowAltCircleRight,
   FaFacebookF,
@@ -10,19 +10,19 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const Footer = () => {
   const companyLinks = [
-    { label: 'About Us', icon: FaRegArrowAltCircleRight, link: 'about' },
-    { label: 'Products', icon: FaRegArrowAltCircleRight, link: 'contact' },
-    { label: 'Accreditation', icon: FaRegArrowAltCircleRight, link: 'contact' },
-    { label: 'Contact Us', icon: FaRegArrowAltCircleRight, link: '' },
-    { label: 'Vision and Mission', icon: FaRegArrowAltCircleRight, link: '' },
-    { label: 'Management Team', icon: FaRegArrowAltCircleRight, link: '' },
-    { label: 'Infrastructure', icon: FaRegArrowAltCircleRight, link: '' },
-    { label: 'Quality Assurance', icon: FaRegArrowAltCircleRight, link: '' },
-    { label: 'Why Us', icon: FaRegArrowAltCircleRight, link: '' },
+    { label: "About Us", icon: FaRegArrowAltCircleRight, link: "about" },
+    { label: "Products", icon: FaRegArrowAltCircleRight, link: "contact" },
+    { label: "Accreditation", icon: FaRegArrowAltCircleRight, link: "contact" },
+    { label: "Contact Us", icon: FaRegArrowAltCircleRight, link: "" },
+    { label: "Vision and Mission", icon: FaRegArrowAltCircleRight, link: "" },
+    { label: "Management Team", icon: FaRegArrowAltCircleRight, link: "" },
+    { label: "Infrastructure", icon: FaRegArrowAltCircleRight, link: "" },
+    { label: "Quality Assurance", icon: FaRegArrowAltCircleRight, link: "" },
+    { label: "Why Us", icon: FaRegArrowAltCircleRight, link: "" },
   ];
 
   const midpoint = Math.ceil(companyLinks.length / 2);
@@ -32,10 +32,15 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: <FaMapMarkerAlt />,
-      text1: 'Regd. Office: MH Nochanwala Exporter, City Kamptee, Pin Code 441001 District Nagpur, Maharashtra State, INDIA',
+      text1:
+        "Regd. Office: MH Nochanwala Exporter, City Kamptee, Pin Code 441001 District Nagpur, Maharashtra State, INDIA",
     },
-    { icon: <FaPhoneAlt />, text1: '+91 9307091009', text2: '+91 9370026214' },
-    { icon: <FaEnvelope />, text1: 'info@mhnochanwala.com', text2: 'mhnochanwala@gmail.com' },
+    { icon: <FaPhoneAlt />, text1: "+91 9307091009", text2: "+91 9370026214" },
+    {
+      icon: <FaEnvelope />,
+      text1: "info@mhnochanwala.com",
+      text2: "mhnochanwala@gmail.com",
+    },
   ];
 
   const socialLinks = [
@@ -69,16 +74,24 @@ const Footer = () => {
 
   return (
     <>
-      <div className="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style={{ backgroundColor: '#255b68' }}>
+      <div
+        className="container-fluid text-light footer pt-5 mt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+        style={{ backgroundColor: "#255b68" }}
+      >
         <div className="container py-5">
           <div className="row g-4">
             <div className="col-lg-3 col-md-6">
               <img src={Logo} className="footer-logo" alt="Company Logo" />
               <div className="d-flex pt-3 ">
                 {socialLinks.map((social, index) => (
-                  <a key={index} className="btn btn-outline-light btn-social" href="/">
+                  <a
+                    key={index}
+                    className="btn btn-outline-light btn-social"
+                    href="/"
+                  >
                     {React.createElement(social.icon, {
-                      className: 'display-1',
+                      className: "display-1",
                       style: { scale: social.scale, size: social.size },
                     })}
                   </a>
@@ -86,32 +99,47 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">Useful Links</h4>
+              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                Useful Links
+              </h4>
               <div className="d-flex flex-column">
                 {firstColumnLinks.map((link, index) => (
-                  <a key={index} className="btn btn-link d-flex align-items-center mb-2" href={link.link}>
-                    {React.createElement(link.icon, { className: 'me-2' })}
+                  <a
+                    key={index}
+                    className="btn btn-link d-flex align-items-center mb-2"
+                    href={link.link}
+                  >
+                    {React.createElement(link.icon, { className: "me-2" })}
                     {link.label}
                   </a>
                 ))}
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">&nbsp;</h4>
+              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                &nbsp;
+              </h4>
               <div className="d-flex flex-column">
                 {secondColumnLinks.map((link, index) => (
-                  <a key={index} className="btn btn-link d-flex align-items-center mb-2" href={link.link}>
-                    {React.createElement(link.icon, { className: 'me-2' })}
+                  <a
+                    key={index}
+                    className="btn btn-link d-flex align-items-center mb-2"
+                    href={link.link}
+                  >
+                    {React.createElement(link.icon, { className: "me-2" })}
                     {link.label}
                   </a>
                 ))}
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">Get In Touch</h4>
+              <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                Get In Touch
+              </h4>
               {contactInfo.map((info, index) => (
                 <p key={index} className="mb-2">
-                  <span style={{ marginRight: '30px' }}>{info.icon}</span>{info.text1} <br /> {info.text2}
+                  <span style={{ marginRight: "30px" }}>{info.icon}</span>
+                  {info.text1} <br /> {info.text2}
                 </p>
               ))}
             </div>
@@ -121,7 +149,10 @@ const Footer = () => {
           <div className="copyright">
             <div className="row">
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                © <a className="border-bottom" href="#">Royals Webtech PVT LTD</a>, All Right Reserved.
+                Designed abd Developed by{" "}
+                <a className="border-bottom" href="https://www.royalswebtech.com/">
+                  <strong>© Royals WebTech 2024</strong>
+                </a>
               </div>
               <div className="col-md-6 text-center text-md-end">
                 <div className="footer-menu">
@@ -136,7 +167,7 @@ const Footer = () => {
         </div>
       </div>
       {isVisible && (
-        <div className='scroll_top' onClick={scrollTop}>
+        <div className="scroll_top" onClick={scrollTop}>
           <i className="bi bi-arrow-up"></i>
         </div>
       )}
