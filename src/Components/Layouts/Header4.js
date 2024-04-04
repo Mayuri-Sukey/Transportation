@@ -54,7 +54,7 @@ const Header4 = () => {
             <Link
               to="/"
               href="javascript:void(0)"
-              className="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+              className="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
             >
               Home
             </Link>
@@ -62,7 +62,7 @@ const Header4 = () => {
           <li class="group max-lg:border-b max-lg:py-2 relative">
             <a
               href="javascript:void(0)"
-              class="hover:text-blue-300 font-bold text-[#000] text-[15px] lg:hover:fill-blue-300 block"
+              class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] lg:hover:fill-blue-300 block"
             >
               Profile
               <svg
@@ -84,7 +84,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <Link
                   to="/about"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   About Us
                 </Link>
@@ -92,7 +92,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <Link
                   to="/vision"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Vision & Mission
                 </Link>
@@ -100,7 +100,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <Link
                   to="/profile/management-team"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Management Team
                 </Link>
@@ -108,7 +108,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Infrastructure
                 </a>
@@ -116,7 +116,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Quality Assurance
                 </a>
@@ -124,7 +124,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Why Us
                 </a>
@@ -135,7 +135,7 @@ const Header4 = () => {
           <li class="group max-lg:border-b max-lg:py-2 relative">
             <a
               href="javascript:void(0)"
-              class="hover:text-blue-300 font-bold text-[#000] text-[15px] lg:hover:fill-blue-300 block"
+              class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] lg:hover:fill-blue-300 block"
             >
               Products
               <svg
@@ -157,7 +157,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Engineering Goods
                 </a>
@@ -165,7 +165,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C text-[15px] block"
                 >
                   Pharmaceutical & Healthcare
                 </a>
@@ -173,7 +173,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Indian Handicrafts
                 </a>
@@ -181,7 +181,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Home Decor & Kitchen Essentials
                 </a>
@@ -189,7 +189,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Agriculture & Processed Food
                 </a>
@@ -197,7 +197,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Printing and packaging solutions
                 </a>
@@ -205,7 +205,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Textile & Garments
                 </a>
@@ -213,7 +213,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Jwellary & Games
                 </a>
@@ -224,7 +224,7 @@ const Header4 = () => {
           <li class="group max-lg:border-b max-lg:py-2 relative">
             <a
               href="javascript:void(0)"
-              class="hover:text-blue-300 font-bold text-[#000] text-[15px] lg:hover:fill-blue-300 block"
+              class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] lg:hover:fill-blue-300 block"
             >
               Accreditation
               <svg
@@ -246,7 +246,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Certificate 01
                 </a>
@@ -254,7 +254,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Certificate 02
                 </a>
@@ -262,7 +262,7 @@ const Header4 = () => {
               <li class="border-b py-2">
                 <a
                   href="javascript:void(0)"
-                  class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+                  class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Certificate 03
                 </a>
@@ -273,7 +273,7 @@ const Header4 = () => {
           <li class="max-lg:border-b max-lg:py-2">
             <a
               href="javascript:void(0)"
-              class="hover:text-blue-300 font-bold text-[#000] text-[15px] block"
+              class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
             >
               Contact Us
             </a>
