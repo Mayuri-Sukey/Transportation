@@ -14,34 +14,35 @@ const Home5 = () => {
                 <div class="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4 font-[sans-serif]">
                     <div>
                         <h1 class="text-4xl font-extrabold text-black">Get in Touch</h1>
-                        <p class="text-md text-gray-900 mt-3">Get in touch with us! We welcome your inquiries, feedback, and collaboration ideas. Whether you have questions about our products or
+                        <p class="text-md text-gray-600 mt-3">Get in touch with us! We welcome your inquiries, feedback, and collaboration ideas. Whether you have questions about our products or
 need assistance, our team is here for you. Connect with us through the provided contact details, and we look forward to hearing from you
 soon.</p>
                         <ul class="mt-12 space-y-8">
-                            <li class="flex items-center">
-                            <IoMailSharp />
-                                <a href="javascript:void(0)" class="text-black text-sm ml-3">
+                            <li class="flex items-center text-lg">
+                            <IoMailSharp style={{fontSize:20}}/>
+                                <a href="javascript:void(0)" class="text-black text-md ml-3">
                                     <strong>info@mhnochanwala.com</strong>
                                 </a>
                             </li>
                             <li class="flex items-center">
-                                <FaPhoneAlt />
-                                <a href="javascript:void(0)" class="text-black text-sm ml-3">
+                                <FaPhoneAlt  style={{fontSize:20}}/>
+                                <a href="javascript:void(0)" class="text-black text-md ml-3">
                                     <strong> +91 9307091009
 </strong>
                                 </a>
                             </li>
                             <li class="flex items-center">
                                 
-                                <FaLocationDot />
-                                <a href="javascript:void(0)" class="text-black text-sm ml-3">
+                            <FaLocationDot style={{fontSize:40}} />
+
+                                <a href="javascript:void(0)" class="text-black text-md ml-3">
                                     <strong>Regd. Office: MH Nochanwala Exporter, City Kamptee, Pin Code 441001,District Nagpur, Maharashtra (State), INDIA
 Social Media Integration Facebook, Instagram, Youtube, Twitter</strong>
                                 </a>
                             </li>
                         </ul>
                         <ul class="flex mt-12 space-x-4">
-                            <li class="bg-[blue] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li class="bg-[blue] hover:bg-[blue] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="javascript:void(0)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill='white'
                                         viewBox="0 0 24 24">
@@ -82,7 +83,7 @@ Social Media Integration Facebook, Instagram, Youtube, Twitter</strong>
 
                         </ul>
                     </div>
-                    <div class="bg-[#F7BE27] p-6 rounded-lg ">
+                    <div class="bg-[#D6A627] p-6 rounded-lg ">
                     <p class="text-lg font-semibold text-[#333] text-center">Unlock Customized Solutions <br></br> Submit Your Inquiry Form Today!</p>
                         {/* <div class="space-y-4 max-lg:mt-4">
                             <button type="button" class="px-4 py-2 rounded-md bg-[#a91079] text-white text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4">Web design</button>
