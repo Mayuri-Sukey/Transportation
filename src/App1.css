@@ -24,8 +24,6 @@
 }
 
 .home-img-par {
-  /* @apply relative mx-4 mt-4 overflow-hidden text-gray-700 bg-black bg-clip-border rounded-xl; */
-
   width: auto;
   height: 70%;
   padding: 15px;
@@ -34,7 +32,7 @@
   @apply rounded-lg;
 }
 
-/* For mobile */
+/*css For mobile */
 @media screen and (max-width: 768px) {
   .home-map-parent div {
     flex: 1 0 100%;
@@ -45,6 +43,14 @@
     padding-right: 20px;
     text-align: center;
   }
+
+  .carosel-img {
+    height: 270px !important;
+  }
+
+  .carosel h3 {
+    font-size: 0.6rem;
+  }
 }
 
 /* For Tablete */
@@ -53,9 +59,13 @@
     flex: 1 0 50%;
   }
 
-  .home-para{
+  .home-para {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
+  }
+
+  .carosel-img {
+    height: 500px !important;
   }
 }
