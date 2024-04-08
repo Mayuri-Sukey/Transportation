@@ -106,12 +106,12 @@ const Header4 = () => {
                 </Link>
               </li>
               <li class="border-b py-2">
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  to="/profile/infrastructure"
                   class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Infrastructure
-                </a>
+                </Link>
               </li>
               <li class="border-b py-2">
                 <a
@@ -122,12 +122,12 @@ const Header4 = () => {
                 </a>
               </li>
               <li class="border-b py-2">
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  to="/profile/whyus"
                   class="hover:text-blue-300 font-bold text-[#504C4C] text-[15px] block"
                 >
                   Why Us
-                </a>
+                </Link>
               </li>
             </ul>
           </li>

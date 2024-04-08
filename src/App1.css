@@ -1,5 +1,5 @@
 .management-main-div {
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 .home-map-parent {
@@ -30,6 +30,10 @@
 }
 .home-img-par img {
   @apply rounded-lg;
+}
+
+.infra-img:hover{
+  
 }
 
 /*css For mobile */

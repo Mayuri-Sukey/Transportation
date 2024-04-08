@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "../../Components/Layouts/Card";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 const Home3 = () => {
   const cardData = [
     {
@@ -44,34 +44,30 @@ const Home3 = () => {
     // Add more mock data objects as needed
   ];
 
-
   const boxvariants = {
     hidden: {
-      y: -10 // Adjust this value as needed
+      y: -10, // Adjust this value as needed
     },
     visible: {
       y: 0,
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.4,
-        duration: 1
-      }
-    }
+        duration: 1,
+      },
+    },
   };
-  
+
   const listvariants = {
     hidden: {
       y: 10, // Adjust this value as needed (opposite sign of the boxvariants)
-      opacity: 0
+      opacity: 0,
     },
     visible: {
       y: 0,
-      opacity: 1
-    }
+      opacity: 1,
+    },
   };
-  
-
-
 
   return (
     <section className="Home3-Why_US">
@@ -79,18 +75,21 @@ const Home3 = () => {
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className="text-center">
             <motion.h2
-            initial={{
-   y:50,
-   opacity:0
-            }}
-            whileInView={{
-              y:0,
-              opacity:1
-            }}
-            transition={{
-              duration:1
-            }}
-            className="pt-5 pb-5 ">Why US</motion.h2>
+              initial={{
+                y: 50,
+                opacity: 0,
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 1,
+              }}
+              className="pt-5 pb-5 "
+            >
+              Why US
+            </motion.h2>
           </Col>
         </Row>
 
